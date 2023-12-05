@@ -1,0 +1,85 @@
+.BannerDiv {
+  width: 100%;
+  height: 56.25vw;
+  position: absolute;
+  top: 0;
+}
+
+.BannerImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.BannerDesc {
+  position: absolute;
+  width: 36%;
+  left: 4%;
+  top: calc(20px + 4.9vw);
+}
+
+.BannerTitle {
+  width: 100%;
+}
+
+.BannerText {
+  font-size: calc(1px + 1.3vw);
+  font-weight: 500;
+  line-height: normal;
+}
+
+.BtnDiv {
+  margin-top: 1.5vw;
+  display: flex;
+}
+
+.Btn {
+  display: flex;
+  align-items: center;
+  margin-right: calc(5px + 1.1vw);
+  padding: calc(3px + 0.2vw) calc(10px + 0.4vw);
+  font-size: calc(5px + 0.9vw);
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.Btn1 {
+  background-color: #ffff;
+  color: black;
+}
+
+.Btn2 {
+  background-color: #5a5451;
+}
+
+.BtnImg1 {
+  height: calc(9px + 0.7vw);
+  width: auto;
+  padding-right: 0.5rem;
+}
+
+.BtnImg2 {
+  height: calc(9px + 1.1vw);
+  width: auto;
+  padding-right: 0.5rem;
+}
+
+.flex {
+  word-break: break-word;
+  white-space: nowrap;
+}
+
+.Blend {
+  width: 100%;
+  height: 14.7vw;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(
+    180deg,
+    hsla(0, 0%, 8%, 0) 0,
+    hsla(0, 0%, 8%, 0.15) 15%,
+    hsla(0, 0%, 8%, 0.35) 29%,
+    hsla(0, 0%, 8%, 0.58) 44%,
+    #141414 68%,
+    #141414
+  );
+}

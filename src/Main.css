@@ -1,0 +1,5 @@
+.Content {
+  position: relative;
+  top: calc(56.25vw - 17vw);
+  padding: 0 4%;
+}

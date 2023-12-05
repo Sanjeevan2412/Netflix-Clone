@@ -1,0 +1,95 @@
+.RowDiv {
+  margin: 3vw 0;
+  position: relative;
+  z-index: 3;
+}
+
+.RowDiv:hover {
+  z-index: 4;
+}
+
+.TextDiv {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: calc(100% - 0.6vw);
+  margin: 0 0.2vw;
+}
+
+.RowText {
+  font-weight: 600;
+  font-size: 1.4vw;
+}
+
+.IndicatorDiv {
+  display: flex;
+  gap: 1px;
+  list-style-type: none;
+  align-items: flex-end;
+}
+
+.Indicator {
+  height: 2px;
+  width: 12px;
+}
+
+.ListDiv {
+  display: flex;
+  align-items: stretch;
+  margin: 0 -4vw;
+  justify-content: center;
+}
+
+.Slider {
+  display: flex;
+  width: calc(92%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.ArrowDiv {
+  z-index: 5;
+  align-self: stretch;
+  width: calc(4% + 0.2vw);
+  border-radius: 2px;
+  user-select: none;
+}
+
+.RightArrowDiv {
+  right: -0.4vw;
+}
+
+.LeftArrowDiv {
+  left: -0.4vw;
+}
+
+.ArrowHover {
+  background-color: hsla(0, 0%, 8%, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.ArrowDiv:hover > .ArrowHover {
+  visibility: visible;
+}
+
+.LeftArrow,
+.RightArrow {
+  width: 32px;
+  height: auto;
+}
+
+.FirstItem {
+  display: contents;
+}
+
+.ItemLoop {
+  display: contents;
+}
