@@ -5,6 +5,7 @@ import "./Main.css";
 import Header from "./Components/Header/Header";
 import Banner from "./Components/Banner/Banner";
 import Row from "./Components/Rows/Row.tsx";
+import Top10 from "./Components/Top10/Top10.tsx";
 
 const Movies = [
   "https://occ-0-3523-64.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYKRaK0JCekFQTCrTgru7t8jDY5AeJxTAmQABfCm5V7nzaKwIHe6giIREzhj6mjpiXifRuXdPESidjjq-SCHk_IuttzlZ2wTOhE.jpg?r=f8a",
@@ -128,6 +129,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <div className="Content">
       <Row Thumbnail={Movies} />
       <Row Thumbnail={Series} />
+      <Top10 />
       <Row Thumbnail={Movies2} />
       <Row Thumbnail={Series2} />
       <Row Thumbnail={Movies3} />

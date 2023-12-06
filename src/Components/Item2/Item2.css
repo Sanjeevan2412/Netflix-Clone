@@ -1,0 +1,115 @@
+.Item2Div {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0.2vw;
+  aspect-ratio: 14/10;
+  height: auto;
+  border-radius: 4px;
+  user-select: none;
+  position: relative;
+}
+
+.Item2Number {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 50%;
+}
+
+.Item2Svg {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.Item2Img {
+  width: 50%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: aqua;
+  z-index: 2;
+}
+
+.Popup {
+  position: absolute;
+  aspect-ratio: 16/18;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.PopupImg {
+  width: 100%;
+  height: 50%;
+  background-color: #46d369;
+  visibility: hidden;
+  border-radius: 4px 4px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 10px;
+}
+
+.Popup:hover {
+  transform: scale(1.3);
+  transform-origin: 50% 100%;
+  transition: all 300ms ease-in-out;
+  transition-delay: 300ms;
+  z-index: 10 !important;
+}
+
+.Popup:hover > .ItemDesc,
+.Popup:hover > .PopupImg {
+  transition: all 300ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 10px;
+  transition-delay: 300ms;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 651px) {
+  .Item2Div {
+    flex: 0 0 calc(50% - 0.4vw);
+    max-width: calc(50% - 0.4vw);
+  }
+
+  .Item2Div:nth-child(even) > .Popup {
+    transform-origin: 0% 100%;
+  }
+
+  .Item2Div:nth-child(odd) > .Popup {
+    transform-origin: 100% 100%;
+  }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1100px) {
+
+  .Item2Div {
+    flex: 0 0 calc(25% - 0.4vw);
+    max-width: calc(25% - 0.4vw);
+  }
+
+  .Item2Div:nth-child(10n + 2) > .Popup {
+    transform-origin: 0% 100%;
+  }
+
+  .Item2Div:nth-child(10n + 6) > .Popup {
+    transform-origin: 0% 100%;
+  }
+
+  .Item2Div:nth-child(6n + 5) > .Popup {
+    transform-origin: 100% 100%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .Item2Div {
+    flex: 0 0 calc(20% - 0.4vw);
+    max-width: calc(20% - 0.4vw);
+  }
+
+  .Item2Div:nth-child(5n + 2) > .Popup {
+    transform-origin: 0% 100%;
+  }
+
+  .Item2Div:nth-child(5n + 1) > .Popup {
+    transform-origin: 100% 100%;
+  }
+}
